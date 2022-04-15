@@ -1,0 +1,38 @@
+{% extends "base.html"%}
+
+{% block head %}
+
+<!--import style for homepage-->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'homepage.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<h1>Welcome to FMI weather station!</h1>
+
+<div>
+<p>
+    The FMI weather station is a facility with instruments and equipment for measuring atmospheric conditions
+    to provide information for weather forecasts and to study the weather and climate.
+</p>
+
+
+<p>
+    The measurements taken include:<br>
+    Temperature<br>
+    Preception amounts (rain)<br>
+</p>
+
+<p>
+    If you want to see the latest rain forecast at our various stations click the Rain button and if  you
+    want to see the temperature forecast at our stations click the Temp button.
+</p>
+</div>
+<h2></h2>
+
+<div>
+<input type=button onClick="location.href='/display_rain'" value='Rain'>
+<input type=button onClick="location.href='/display_temp'" value='Temp'>
+
+</div>
+{% endblock %}

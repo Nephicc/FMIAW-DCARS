@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+
+{% block head %}
+
+    <!-- import chart.js library and ajax -->
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+{% endblock %}
+
+
+<!--
+    Her er htlm kroppen
+-->
+
+{% block body %}
+    <p id="demo"></p>
+    <h1 style="text-align: center; color: black;">Precipitation/Rain (mm) at Stations</h1>
+    <div id="graph">
+        <canvas id='rain_temp_canvas' width="600" height="200"></canvas>
+        <script type="text/javascript" src="{{ url_for('static', filename='rainGraph.js') }}"></script>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+<!--The base file makes it so that we don't have to write multiple html files
+with the same basic html-format. Good if we want to create multiple pages-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %} {% endblock %}
+</head>
+</body>
+    {% block body %} {% endblock %}
+</body>
+</html>

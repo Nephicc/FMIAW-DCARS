@@ -1,0 +1,6 @@
+.idea/
+data.txt
+venv
+StationData
+__pycache__/
+.git2
